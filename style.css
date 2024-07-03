@@ -1,0 +1,17 @@
+.header{
+    max-width: 100%;
+    .header_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header_img_me{
+        max-width: 40%;
+    }
+}
+.information{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .img_code_pic{
+    max-width: 75%;
+    }
+}
