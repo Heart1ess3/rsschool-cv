@@ -70,19 +70,19 @@
                     <div class="code-section">
                         <pre class="code-block no-left-padding">
                             <code class="language-csharp">
-static void SearchTheCheapest()
-{
-    // Console.WriteLine(TireArray.OrderBy((tire) => tire.price)
-                                    .FirstOrDefault().ToInput());
-    int minPrice = TireArray.Min(tire => tire.price);
-    var mostExpensiveTires = TireArray.Where(tire => tire.price == minPrice)
-                                    .OrderByDescending(tire => tire.price);
-
-    foreach (var tire in mostExpensiveTires)
-    {
-        Console.WriteLine(tire.ToInput());
-    }
-}
+                    static void SearchTheCheapest()
+                    {
+                        // Console.WriteLine(TireArray.OrderBy((tire) => tire.price)
+                                                        .FirstOrDefault().ToInput());
+                        int minPrice = TireArray.Min(tire => tire.price);
+                        var mostExpensiveTires = TireArray.Where(tire => tire.price == minPrice)
+                                                        .OrderByDescending(tire => tire.price);
+                    
+                        foreach (var tire in mostExpensiveTires)
+                        {
+                            Console.WriteLine(tire.ToInput());
+                        }
+                    }
                             </code>
                         </pre>
                     </div>
